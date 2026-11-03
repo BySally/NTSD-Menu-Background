@@ -1,0 +1,4 @@
+NTSD Menu Background 0.1.0. Original client integration, LGPL-2.1-only.
+The bounded FrameStream implementation is adapted from the project's NTSD Early Loading integration under LGPL-2.1-only.
+Uses installed Minecraft Forge, LWJGL/STB and Mixin APIs. No Minecraft or Forge class/resource is copied into this JAR.
+Owner-supplied Orbital Sunrise video is separate. No public artwork license is inferred.

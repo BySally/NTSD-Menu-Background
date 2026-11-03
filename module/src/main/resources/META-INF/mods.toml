@@ -1,0 +1,22 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="LGPL-2.1-only"
+[[mods]]
+modId="ntsdmenu"
+version="0.1.2"
+displayName="NTSD Menu Background"
+authors="BySally (Project Creator & Maintainer); Second Dawn integration contributors"
+description='''Client-only animated background for the existing Minecraft title screen. No buttons or other screens are replaced.'''
+displayTest="IGNORE_SERVER_VERSION"
+[[dependencies.ntsdmenu]]
+modId="forge"
+mandatory=true
+versionRange="[47.4.20,48)"
+ordering="NONE"
+side="CLIENT"
+[[dependencies.ntsdmenu]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1]"
+ordering="NONE"
+side="CLIENT"

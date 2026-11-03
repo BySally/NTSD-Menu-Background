@@ -1,0 +1,14 @@
+plugins { id 'net.minecraftforge.gradle' version '[6.0,6.2)' }
+version='0.1.2'
+group='dev.ntsd.menu'
+base { archivesName='ntsd-menu-background' }
+java.toolchain.languageVersion=JavaLanguageVersion.of(17)
+minecraft { mappings channel:'official',version:'1.20.1' }
+dependencies { minecraft 'net.minecraftforge:forge:1.20.1-47.4.28' }
+tasks.withType(JavaCompile).configureEach { options.encoding='UTF-8';options.compilerArgs+=['-proc:none'] }
+tasks.named('jar',Jar).configure {
+    manifest { attributes(['MixinConfigs':'ntsdmenu.mixins.json','Implementation-Version':project.version]) }
+    from('LICENSE') { into 'META-INF' }
+    from('NOTICE') { into 'META-INF' }
+    finalizedBy 'reobfJar'
+}
